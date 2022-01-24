@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    -moz-font-family: 'Nunito Sans', sans-serif;
+    color: #4a5363;
+
+}
+
+nav{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 10px;
+   letter-spacing: 0.3px;
+}
+
+.appName{
+    font-size: 24px;
+}
+
+.appName h3{
+    color: rgba(0, 0, 0, 0.808);
+    font-family: 'Dancing Script', cursive;
+}
+
+.cyndy_name h5{
+    width: 100%;
+    text-align: left;
+    margin-right: 10px;
+}
+.Cyndy_image{
+    display: flex;
+    align-items: center;
+}
+
+.Cyndy_image img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.mainBox{
+    display: flex;
+}
+input{
+    height: 30px;
+width: 33em;
+border-radius: 7px;
+border: 1px solid #00000059;
+outline: none;
+padding-inline: 14px;
+font-size: 14px
+}
+
+.icons ul li{
+    margin-top: 15px;
+}
+.icons>ul>li>a{
+font-style: none;
+text-decoration: none;
+font-size: 14.5px;
+font-weight: 600;
+}
+
+.icons>ul>li>a:hover{
+    text-decoration: underline;
+    }
+
+.active{
+        color: #fb6a83;
+    }
+
+
+.icons ul li a .fal{
+        font-size: 14.5px;
+        padding: 0 9px 0 27px;
+        font-weight: 600;
+        font-family: Font Awesome 5 Pro;
+}
+
+.icons ul li a .fab{
+    font-size: 14.5px;
+    font-family: Font Awesome 5 Pro;
+    padding: 0 9px 0 27px;
+    font-weight: 600;
+   background: transparent;
+}
+
+.gray_main_backgr{
+    background-color: #4a53631c;
+    height: 704px;
+    width: 825px;
+    border-radius: 1em;
+    margin: 30px 0 0 30px;
+}
+
+.myContacts{
+    margin: 40px 0;
+    padding: 10px 0 0 20px;
+}
+
+.contactsinfo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.contactName{
+    display: flex;
+    padding-top: 20px;
+}
+
+.contactName p{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+.contactName span{
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 10px;
+}
