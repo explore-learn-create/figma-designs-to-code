@@ -1,128 +1,303 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Nunito Sans', sans-serif;
-    -moz-font-family: 'Nunito Sans', sans-serif;
-    color: #4a5363;
+:root {
+  --maincolor: #fb6a83;
+  --gray: #4a53631c;
+  --white: #fff;
+  --text-color: #656e7eef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  -moz-font-family: "Nunito Sans", sans-serif;
+  color: #4a5363;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  letter-spacing: 0.3px;
+}
+
+.appName {
+  font-size: 24px;
+}
+
+.appName h3 {
+  color: rgba(0, 0, 0, 0.808);
+  font-family: "Dancing Script", cursive;
+}
+
+.cyndy_name h5 {
+  width: 100%;
+  text-align: left;
+  margin-right: 10px;
+}
+.Cyndy_image {
+  display: flex;
+  align-items: center;
+}
+
+.Cyndy_image img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.mainBox {
+  display: flex;
+}
+input {
+  height: 30px;
+  width: 33em;
+  border-radius: 7px;
+  border: 1px solid #00000059;
+  outline: none;
+  padding-inline: 14px;
+  font-size: 14px;
+}
+
+.icons ul li {
+  margin-top: 15px;
+}
+.icons > ul > li > a {
+  font-style: none;
+  text-decoration: none;
+  font-size: 14.5px;
+  font-weight: 600;
+}
+
+.icons > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: var(--maincolor);
+}
+
+.icons ul li a .fal {
+  font-size: 14.5px;
+  padding: 0 9px 0 27px;
+  font-family: Font Awesome 5 Pro;
+}
+
+.icons ul li a .fab {
+  font-size: 14.5px;
+  font-family: Font Awesome 5 Pro;
+  padding: 0 9px 0 27px;
+  background: transparent;
+}
+
+.gray_main_backgr {
+  background-color: #4a53631c;
+  height: 100vh;
+  width: 100%;
+  /* border-radius: 1em; */
+  margin-left: 50px;
+  z-index: 0;
+}
+
+.myContacts {
+  margin: 40px 0;
+  padding: 10px 0 0 20px;
+}
+
+.contactsinfo img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.contactName {
+  display: flex;
+  padding-top: 13px;
+}
+
+.contactName p {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+
+.contactName span {
+  font-size: 11px;
+  font-weight: 500;
+  margin-left: 9px;
+}
+
+#gray-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 300px 0.5fr;
+}
+
+.posts,
+.friemds,
+.stories {
+  /* background-color: var(--maincolor); */
+  z-index: 10;
+  height: 100vh;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.happening {
+  background: var(--white);
+  height: 136px;
+  width: 90%;
+  border-radius: 10px;
+  margin-block: 30px;
+}
+
+.img-happen {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.img-happen img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.img-happen input {
+  width: 77%;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  background-color: var(--gray);
+  padding-block: 17px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: var(--text-color);
+}
+
+input[placeholder="What's happening?"] {
+  color: #656e7e81;
+}
+
+.vdeo-phto-pst ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 45px;
+}
+
+.vdeo-phto-pst ul li {
+  list-style: none;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+}
+
+.vdeo-phto-pst .fal {
+  font-size: 15px;
+}
+
+.vdeo-phto-pst ul .post-btn {
+  padding: 4px 25px;
+  background-color: var(--maincolor);
+  border-radius: 7px;
+  transform: translateY(10%);
+  cursor: pointer;
+}
+.vdeo-phto-pst .post-btn a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.peoplespost1 {
+  background: var(--white);
+  height: 425px;
+  width: 90%;
+  border-radius: 10px;
+  display: grid;
+}
+
+.afrin {
+  display: inline-flex;
+  margin-block: 8px;
+}
+
+.afrin img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.afrin-name {
+  padding-left: 16px;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.afrin-name p {
+  font-size: 11px;
+}
+
+.post1-img{
+    display: flex;
+    justify-content: center;
+}
+
+.post1-img img{
+    width: 476px;
+    height: 268px;
+    border-radius: 10px;
+}
+
+.likes-comment{
+    display: flex;
+}
+.likes-img {
+    display: flex;
+  margin-left: 15px;
 
 }
 
-nav{
+.likes-img img{
+   width: 27px;
+   height: 27px;
+   border-radius: 50%;
+   border: 1px solid var(--white);
+}
+
+.likes-img span{
+    background-color: var(--maincolor);
+    width: 27px;
+   height: 27px;
+   border-radius: 50%;
+   border: 1px solid var(--white);
    display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   padding: 10px;
-   letter-spacing: 0.3px;
+   align-items: center;
+  text-align:       center;
+  justify-content: center;
+   color: var(--white);
+   font-size: 13px;
 }
 
-.appName{
-    font-size: 24px;
+.overlap-img{
+    transform: translateX(-55%);
 }
 
-.appName h3{
-    color: rgba(0, 0, 0, 0.808);
-    font-family: 'Dancing Script', cursive;
+.overlap-img1{
+    transform: translateX(-95%);
 }
 
-.cyndy_name h5{
-    width: 100%;
-    text-align: left;
-    margin-right: 10px;
-}
-.Cyndy_image{
-    display: flex;
-    align-items: center;
+.overlap-img2{
+    transform: translateX(-135%);
 }
 
-.Cyndy_image img{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-}
-.mainBox{
-    display: flex;
-}
-input{
-    height: 30px;
-width: 33em;
-border-radius: 7px;
-border: 1px solid #00000059;
-outline: none;
-padding-inline: 14px;
-font-size: 14px
-}
-
-.icons ul li{
-    margin-top: 15px;
-}
-.icons>ul>li>a{
-font-style: none;
-text-decoration: none;
-font-size: 14.5px;
-font-weight: 600;
-}
-
-.icons>ul>li>a:hover{
-    text-decoration: underline;
-    }
-
-.active{
-        color: #fb6a83;
-    }
-
-
-.icons ul li a .fal{
-        font-size: 14.5px;
-        padding: 0 9px 0 27px;
-        font-weight: 600;
-        font-family: Font Awesome 5 Pro;
-}
-
-.icons ul li a .fab{
-    font-size: 14.5px;
-    font-family: Font Awesome 5 Pro;
-    padding: 0 9px 0 27px;
-    font-weight: 600;
-   background: transparent;
-}
-
-.gray_main_backgr{
-    background-color: #4a53631c;
-    height: 704px;
-    width: 825px;
-    border-radius: 1em;
-    margin: 30px 0 0 30px;
-}
-
-.myContacts{
-    margin: 40px 0;
-    padding: 10px 0 0 20px;
-}
-
-.contactsinfo img{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-}
-
-.contactName{
-    display: flex;
-    padding-top: 20px;
-}
-
-.contactName p{
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: capitalize;
-    margin-left: 10px;
-}
-
-.contactName span{
-    font-size: 13px;
-    font-weight: 500;
-    margin-left: 10px;
-}
