@@ -95,9 +95,10 @@ input {
 
 .gray_main_backgr {
   background-color: #4a53631c;
-  height: 100vh;
   width: 100%;
-  /* border-radius: 1em; */
+  height: max-content;
+  overflow-y: hidden;
+  border-radius: 1em 0 0 0;
   margin-left: 50px;
   z-index: 0;
 }
@@ -145,9 +146,9 @@ input {
 }
 
 .posts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  justify-items: center;
+  height: max-content;
 }
 
 .happening {
@@ -220,10 +221,11 @@ input[placeholder="What's happening?"] {
 
 .peoplespost1 {
   background: var(--white);
-  height: 425px;
+  height: 500px;
   width: 90%;
   border-radius: 10px;
   display: grid;
+  margin-bottom: 20px;
 }
 
 .afrin {
@@ -299,5 +301,268 @@ input[placeholder="What's happening?"] {
 
 .overlap-img2{
     transform: translateX(-135%);
+}
+
+.comment-like-count{
+  display: flex;
+  width: 100%;
+justify-content: flex-end;
+margin-right: 20px;
+align-items: center;
+font-size: 12px;
+height: 30px;
+font-weight: 600;
+}
+
+.comment-like-count .comments-no{
+  margin-right: 15px;
+}
+.like-cmnt-share{
+  display: block;
+}
+
+.like-cmnt-share::after,
+.like-cmnt-share::before{
+  content: '';
+  background-color: rgba(128, 128, 128, 0.603);
+  width: 94%;
+  height: 1px;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.like-cmnt-share-btn{
+  display: flex;
+  justify-content: space-around;
+}
+
+.like-cmnt-share-btn span{
+  margin-block: 5px;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.write-comment{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.write-comment img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.write-comment span{
+  background: #e0758770;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.write-comment span .fal{
+  color: #fd1f44;
+}
+
+.write-comment input{
+  width: 70%;  
+  border: none;
+  outline: none;
+  background-color: var(--gray);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: var(--text-color);
+  position: relative;
+  z-index: 0;
+}
+
+.write-comment input::before{
+    content: "\f5b8";
+    font-family: "Font Awesome 5 free";font-weight: 600;
+    z-index: 10;
+    position: absolute;
+}
+
+.peoplespost2{
+  background: var(--white);
+  height: 200px;
+  width: 90%;
+  border-radius: 10px 10px 0 0;
+  display: grid;
+}
+
+.mike {
+  display: inline-flex;
+  margin-block: 8px;
+}
+
+.mike img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.mike-name {
+  padding-left: 16px;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.mike-name p {
+  font-size: 11px;
+}
+
+.post2-img{
+    display: flex;
+    justify-content: center;
+}
+
+.post2-img img{
+    width: 476px;
+    height: 268px;
+    border-radius: 10px;
+}
+
+.mike-caption{
+  font-size: 13px;
+  font-weight: 600;
+  margin: 4px 0 10px 20px;
+}
+
+.friemds{
+  display: grid;
+  justify-items: center;
+}
+
+
+.might-like{
+  height: 201px;
+  width: 288px;
+  background: var(--white);
+  border-radius: 10px;
+  margin: 30px 0 15px 0;
+}
+
+.see-all{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 10px 0 10px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .4px;
+}
+
+.see-all a{
+  color: cornflowerblue;
+ text-decoration: none;
+}
+
+.see-all1::after{
+  content: '';
+  background-color: rgba(192, 191, 191, 0.267);
+  width: 100%;
+  height: 1px;
+  display: block;
+  margin-top: 10px;
+}
+
+.mutual{
+  margin: 14px 0 7px 10px;
+}
+
+.Mohammad-img-name{
+  display: flex;
+  gap: 10px;
+}
+
+.Mohammad-img-name img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.Mohammad-img-name span{
+  color: #8D97AA;
+  font-size: 13.7px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin: 3px 0 5px 0;
+}
+
+.mutual-frnds-img{
+  display: flex;
+  align-items: center;
+}
+
+.mutual-frnds-img img{
+  width: 22px;
+   height: 22px;
+   border-radius: 50%;
+   border: 1px solid var(--white);
+}
+
+.overlap-frnds-img{
+  transform: translateX(-55%);
+}
+
+.overlap-frnds-img1{
+  transform: translateX(-95%);
+}
+
+.mutual-frnds-img p{
+  transform: translateX(-35%);
+  font-size: 12px;
+  font-weight: 600;
+  color: #8D97AA;
+}
+
+.follow-ignore-btn{
+  display: flex;
+  justify-content: space-around;
+   margin-top: 30px;
+}
+
+.follow-ignore-btn a{
+  padding: 7px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+}
+
+.pink-btn{
+  background: var(--maincolor);
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.gray-btn{
+  border: 2px solid gray;
+  font-weight: 600;
+  letter-spacing: .6px;
+}
+
+.events{
+  width: 288px;
+  height: 414px;
+  background: var(--white);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.suggested-group{
+  width: 288px;
+  height: 226px;
+  background: var(--white);
+  border-radius: 10px;
 }
 
