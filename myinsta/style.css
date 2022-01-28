@@ -566,3 +566,180 @@ font-weight: 600;
   border-radius: 10px;
 }
 
+
+.event-box{
+  width: 251px;
+  height: 156px;
+  background-color: #E8EDF2;
+  margin: 20px 0 10px 20px;
+  border-radius: 10px;
+}
+
+.design{
+  display: flex;
+  margin-left: 20px;
+}
+
+.design-img{
+  background: #7effc38c;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 16px;
+}
+
+.design-img .fab{
+  position: absolute;
+  top: 23%;
+  left: 24%;
+  font-size: 20px;
+  color: #32b37f;
+}
+
+.design-talk{
+  display: grid;  
+  margin-left: 10px;
+  margin-top: 16px;
+}
+
+.design-talk p{
+  font-weight: 600;
+  color: #4E5D78;
+  font-size: 14px;
+}
+
+.design-talk span{
+  font-weight: 600;
+  color: #8495B4;
+  font-size: 12px;
+}
+
+.general-talk p{
+  font-size: 12px;
+  font-weight: 600;
+  color: #4E5D78;
+  margin-left: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.general-talk::after{
+  content: '';
+  background: rgba(128, 128, 128, 0.493);
+  width: 90%;
+  height: 1px;
+  display: block;
+  margin: auto;
+  border-radius: 10x;
+}
+
+.joined{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.joined .likes-img{
+  margin-left: 0;
+}
+
+.joined-count p{
+  font-weight: 600;
+  color: #8495B4;
+  font-size: 12px;
+}
+
+.joined img{
+  width: 25px;
+  height: 25px;
+}
+
+.joined span{
+  width: 25px;
+  height: 25px;
+  background-color: #4ab482;
+}
+
+.purpel{
+  background-color: #af7effb0;
+}
+
+.joined .purpel{
+background-color: #AF7EFF;
+}
+.design-img .purpell{
+  color: #7226eb;
+}
+
+.ui-img{
+  margin: 14px 0 0 20px;
+}
+.ui-img img{
+  width: 251px;
+  height: 99px;
+  border-radius: 10px;
+}
+
+.design-ui{
+  display: flex;
+  gap: 6px;
+}
+
+.design-ui img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-left: 45px;
+  transform: translateY(-40%);
+}
+
+.design-ui p{
+  font-weight: 600;
+  color: #4E5D78;
+  font-size: 14px;
+}
+
+.members{
+  display: flex;
+  justify-content: space-around;
+  transform: translateY(-80%);
+}
+
+.members p{
+  font-weight: 600;
+  color: #4E5D78;
+  font-size: 12px;
+}
+
+.members .far{
+  font-size: 12px;
+}
+
+.stories{
+  display: grid;
+  justify-items: right;
+  height: 100%;
+}
+
+.stories-wrapper{
+  margin-top: 5px;
+  width: 272px;
+  background: var(--white);
+  border-radius: 10px 0 0 0;
+}
+
+.stories-wrapper input{
+  width: 90%;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  background-color: var(--gray);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: var(--text-color);
+  margin-top: 10px;
+  font-size: 12px;
+}
