@@ -743,3 +743,94 @@ background-color: #AF7EFF;
   margin-top: 10px;
   font-size: 12px;
 }
+
+.put-stories{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 5px;
+}
+
+.stories-name{
+  text-align: center;
+  position: relative;
+}
+.stories-name img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 42, 173);
+}
+
+.stories-name p{
+  font-size: 13px;
+  font-weight: 600;
+  margin: 5px 0 0 0;
+}
+
+.stories-name span{
+   background-color: #fff;
+   width: 18px;
+   height: 18px;
+   border-radius: 50%;
+   color: rgb(206, 43, 165);
+   position: absolute;
+   top: 48%;
+   left: 35%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 600;
+   border: 1px solid var(--maincolor);
+}
+
+.recent-chats{
+  margin-top: 45px;
+}
+
+.recent-chats h4{
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.chat-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px 0 13px;
+}
+
+.chat-name-img{
+  display: flex;
+  align-items: center;
+}
+
+.chat-name-img img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 0.15rem rgb(236, 61, 143));
+}
+
+.chatname{
+  display: block;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.chatname p{
+  font-size: 14px;
+  color: #4D4D4D;
+}
+
+.chatname span{
+  font-size: 12px;
+  color: #909AAE;
+}
+
+.chat-wrapper .far{
+  font-size: 20px;
+}
+
+.chat-upspace{
+  margin-top: 13px;
+}
